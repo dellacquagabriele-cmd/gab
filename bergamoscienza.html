@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html class="light" lang="en">
+<html class="light" lang="it">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
         theme: {
@@ -70,10 +70,7 @@
                     "full": "9999px"
             },
             "spacing": {
-                    "section-padding": "5rem",
-                    "component-gap": "3rem",
-                    "gutter": "2rem",
-                    "container-max-width": "1280px"
+                    "gutter": "2rem"
             },
             "fontFamily": {
                     "label": ["Inter"],
@@ -93,21 +90,21 @@
         },
       }
     </script>
-<style>
+    <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 48;
             font-size: 2.5rem;
         }
         body {
             background-color: #F8FAFC;
-            min-height: max(884px, 100dvh);
+            min-height: 100dvh;
         }
     </style>
 </head>
-<body class="font-body-md text-on-surface">
+<body class="font-body-md text-on-surface antialiased">
 
-<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md">
-    <div class="flex justify-between items-center max-w-container-max-width mx-auto px-gutter py-4">
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md border-b border-outline-variant/10">
+    <div class="flex justify-between items-center max-w-4xl mx-auto px-gutter py-4">
         <div class="flex items-center gap-4">
             <span class="font-h2 text-h2 font-semibold text-on-surface dark:text-inverse-on-surface tracking-widest uppercase select-none">DELL'ACQUA</span>
         </div>
@@ -126,79 +123,73 @@
     </div>
 </header>
 
-<main class="pt-32 pb-section-padding">
-<section class="max-w-container-max-width mx-auto px-gutter mb-20">
-<div class="border-l-2 border-primary pl-8">
-<h1 class="font-h1 text-h1 text-text-primary mb-6">Bergamo Scienza</h1>
-<p class="font-body-lg text-body-lg text-text-secondary max-w-2xl"></p><div class="flex flex-col sm:flex-row gap-12 mt-6">
-<div class="flex flex-col gap-1"><span class="font-label text-xl font-bold uppercase tracking-[0.2em] text-accent-cyan">DOVE?</span><span class="font-body-md text-sm text-text-secondary">Presso i laboratori della scuola </span></div>
-<div class="flex flex-col gap-1"><span class="font-label text-xl font-bold uppercase tracking-[0.2em] text-accent-cyan">QUANDO?</span><span class="font-body-md text-sm text-text-secondary">Dal 16 al 20 Giugno 2025</span></div>
-</div><p></p>
-</div>
-</section>
+<main class="pt-32 pb-20 px-gutter">
+    <section class="max-w-4xl mx-auto mb-20">
+        <div class="border-l-2 border-primary pl-8">
+            <h1 class="font-h1 text-h1 text-text-primary mb-6">Bergamo Scienza</h1>
+            <div class="flex flex-col sm:flex-row gap-12 mt-6">
+                <div class="flex flex-col gap-1"><span class="font-label text-xl font-bold uppercase tracking-[0.2em] text-accent-cyan">DOVE?</span><span class="font-body-md text-sm text-text-secondary">Presso i laboratori della scuola </span></div>
+                <div class="flex flex-col gap-1"><span class="font-label text-xl font-bold uppercase tracking-[0.2em] text-accent-cyan">QUANDO?</span><span class="font-body-md text-sm text-text-secondary">Dal 16 al 20 Giugno 2025</span></div>
+            </div>
+        </div>
+    </section>
 
-<section class="max-w-container-max-width mx-auto px-gutter">
-<div class="max-w-4xl bg-surface-container-low rounded-xl p-10 md:p-16 border border-outline-variant/30">
-<div class="flex flex-col gap-8">
-<header class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary" data-icon="auto_awesome">edit</span>
-<h2 class="font-label text-label uppercase tracking-[0.2em] text-primary">descrizione dell'attività</h2>
-</header>
-<article class="space-y-8">
-<p class="font-body-lg text-on-surface-variant leading-relaxed">Bergamo Scienza è un festival scientifico che si svolge annualmente a Bergamo nel mese di Ottobre. Il programma include diversi laboratori e mostre, con lo scopo di divulgare conoscenze scientifiche al maggior numero possibile di persone.</p><p></p>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-<div class="space-y-4">
-<div class="flex items-center gap-3 text-accent-cyan">
-<span class="material-symbols-outlined !text-xl" data-icon="record_voice_over">record_voice_over</span>
-<span class="font-label text-[0.75rem] uppercase tracking-widest">socializzazone</span>
-</div>
-<p class="font-body-md text-on-surface-variant">Ho sviluppato capacità comunicative, divulgative e in un certo senso anche ludiche. Mi è piaciuto molto spiegare a dei bambini il funzionamento di alcuni oggetti che incontrano quotidianamente, senza essersi mai chiesti il loro funzionamento</p>
-</div>
-<div class="space-y-4">
-<div class="flex items-center gap-3 text-accent-cyan">
-<span class="material-symbols-outlined !text-xl" data-icon="psychology">psychology</span>
-<span class="font-label text-[0.75rem] uppercase tracking-widest">utilità orientativa</span>
-</div>
-<p class="font-body-md text-on-surface-variant">Grazie all'esperienza ho saputo immergermi nel ruolo del divulgatore scientifico: figura professionale che rende accessibili a tutti dei concetti scientifici che governano la realtà che ci circonda</p>
-</div>
-</div>
-<div class="pt-8 border-t border-outline-variant/20">
-<p class="font-body-md text-text-secondary italic">
-                        Attività in cui ho saputo guidare dei bambini attraverso un percorso scientifico talvolta non facile da seguire</p>
-</div>
-</article>
-</div>
-</div>
-</section>
+    <section class="max-w-4xl mx-auto mb-12">
+        <div class="bg-surface-container-low rounded-xl p-10 md:p-16 border border-outline-variant/30">
+            <div class="flex flex-col gap-8">
+                <header class="flex items-center gap-4">
+                    <span class="material-symbols-outlined text-primary" data-icon="auto_awesome">edit</span>
+                    <h2 class="font-label text-label uppercase tracking-[0.2em] text-primary">descrizione dell'attività</h2>
+                </header>
+                <article class="space-y-8">
+                    <p class="font-body-lg text-on-surface-variant leading-relaxed">Bergamo Scienza è un festival scientifico che si svolge annualmente a Bergamo nel mese di Ottobre. Il programma include diversi laboratori e mostre, con lo scopo di divulgare conoscenze scientifiche al maggior numero possibile di persone.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3 text-accent-cyan">
+                                <span class="material-symbols-outlined !text-xl" data-icon="record_voice_over">record_voice_over</span>
+                                <span class="font-label text-[0.75rem] uppercase tracking-widest">abilità comunicative</span>
+                            </div>
+                            <p class="font-body-md text-on-surface-variant">Ho sviluppato capacità comunicative, divulgative e in un certo senso anche ludiche. Mi è piaciuto molto spiegare a dei bambini il funzionamento di alcuni oggetti che incontrano quotidianamente, senza essersi mai chiesti il loro funzionamento</p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3 text-accent-cyan">
+                                <span class="material-symbols-outlined !text-xl" data-icon="psychology">psychology</span>
+                                <span class="font-label text-[0.75rem] uppercase tracking-widest">utilità orientativa</span>
+                            </div>
+                            <p class="font-body-md text-on-surface-variant">Grazie all'esperienza ho saputo immergermi nel ruolo del divulgatore scientifico: figura professionale che rende accessibili a tutti dei concetti scientifici che governano la realtà che ci circonda</p>
+                        </div>
+                    </div>
+                    <div class="pt-8 border-t border-outline-variant/20">
+                        <p class="font-body-md text-text-secondary italic">Attività in cui ho saputo guidare dei bambini attraverso un percorso scientifico talvolta non facile da seguire</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-<section class="max-w-container-max-width mx-auto px-gutter mt-12">
-    <div class="max-w-4xl"> 
-        <div class="relative w-full min-h-[220px] rounded-xl overflow-hidden border border-outline-variant/30 bg-white p-8 flex items-center justify-center transition-all duration-300 group">
+    <section class="max-w-4xl mx-auto">
+        <div class="relative w-full min-h-[220px] rounded-xl overflow-hidden border border-outline-variant/30 bg-white p-8 flex items-center justify-center transition-all duration-300 group cursor-pointer">
+            <img alt="Logo Bergamo Scienza" class="max-w-full h-auto max-h-[160px] object-contain block grayscale transition-all duration-500 group-hover:grayscale-0" src="logobergamoscienza.png"/>
             
-            <img alt="Logo Bergamo Scienza" class="max-w-full h-auto max-h-[160px] object-contain block" src="logobergamoscienza.png"/>
-            
-            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/5 via-transparent to-transparent pointer-events-none"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/10 via-transparent to-transparent pointer-events-none"></div>
             
             <div class="absolute bottom-4 left-4">
-                <span class="font-label text-[11px] font-semibold text-white bg-primary px-4 py-2 rounded-full uppercase tracking-widest shadow-sm group-hover:bg-accent-cyan transition-colors duration-300">
+                <span class="font-label text-[11px] font-semibold text-slate-200 bg-slate-500 px-4 py-2 rounded-full uppercase tracking-widest shadow-sm transition-all duration-500 group-hover:text-white group-hover:bg-primary [@media(hover:hover)]:group-hover:hover:bg-accent-cyan">
                     Logo di Bergamo Scienza
                 </span>
             </div>
         </div>
-    </div>
-</section>
-
+    </section>
 </main>
 
-<footer class="w-full py-section-padding bg-surface-container-low dark:bg-inverse-surface border-t border-outline-variant">
-<div class="flex flex-col md:flex-row justify-between items-center max-w-container-max-width mx-auto px-gutter gap-component-gap">
-<div class="flex flex-col gap-2">
-<span class="font-label text-label font-bold text-on-surface uppercase tracking-widest">DELL'ACQUA</span>
-<p class="font-body-md text-body-md text-text-secondary opacity-80">© 2026 Gabriele Dell'Acqua. Percorso PCTO.</p>
-</div>
-<div class="flex items-center gap-8">
-</div>
-</div>
+<footer class="w-full py-12 bg-surface-container-low dark:bg-inverse-surface border-t border-outline-variant">
+    <div class="flex flex-col md:flex-row justify-between items-center max-w-4xl mx-auto px-gutter gap-6">
+        <div class="flex flex-col gap-2">
+            <span class="font-label text-label font-bold text-on-surface uppercase tracking-widest">DELL'ACQUA</span>
+            <p class="font-body-md text-body-md text-text-secondary opacity-80">© 2026 Gabriele Dell'Acqua. Percorso PCTO.</p>
+        </div>
+    </div>
 </footer>
+
 </body>
 </html>
