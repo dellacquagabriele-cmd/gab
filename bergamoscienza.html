@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-
-<html class="light" lang="en" style=""><head>
+<html class="light" lang="en">
+<head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Newsreader:opsz,wght@6..72,500;6..72,600&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
@@ -101,37 +100,43 @@
         }
         body {
             background-color: #F8FAFC;
+            min-height: max(884px, 100dvh);
         }
     </style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
 </head>
 <body class="font-body-md text-on-surface">
-<!-- TopAppBar -->
+
 <header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md">
-<div class="flex justify-between items-center max-w-container-max-width mx-auto px-gutter py-4">
-<div class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim cursor-pointer transition-transform duration-300 hover:scale-105" data-icon="menu">menu</span>
-<span class="font-h2 text-h2 font-semibold text-on-surface dark:text-inverse-on-surface tracking-widest uppercase">DELL'ACQUA</span>
-</div>
-<nav class="hidden md:flex items-center gap-8"><div class="flex items-center gap-6"><a class="font-label text-label text-on-surface-variant hover:text-accent-cyan transition-colors duration-300" href="#">HOME</a><div class="flex items-center gap-4"><a class="font-label text-label text-on-surface-variant hover:text-accent-cyan transition-colors duration-300" href="#">ESPERIENZE</a><div class="flex items-center gap-2"><span class="w-4 h-[1px] bg-outline-variant"></span><a class="font-label text-label text-accent-cyan transition-colors duration-300" href="#">Bergamo Scienza</a></div></div></div></nav>
-</div>
+    <div class="flex justify-between items-center max-w-container-max-width mx-auto px-gutter py-4">
+        <div class="flex items-center gap-4">
+            <span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim cursor-pointer transition-transform duration-300 hover:scale-105" data-icon="menu">menu</span>
+            <span class="font-h2 text-h2 font-semibold text-on-surface dark:text-inverse-on-surface tracking-widest uppercase">DELL'ACQUA</span>
+        </div>
+        <nav class="hidden md:flex items-center gap-8">
+            <div class="flex items-center gap-6">
+                <a class="font-label text-label text-on-surface-variant hover:text-accent-cyan transition-colors duration-300" href="index.html">HOME</a>
+                <div class="flex items-center gap-4">
+                    <a class="font-label text-label text-on-surface-variant hover:text-accent-cyan transition-colors duration-300" href="esperienze.html">ESPERIENZE</a>
+                    <div class="flex items-center gap-2">
+                        <span class="w-4 h-[1px] bg-outline-variant"></span>
+                        <a class="font-label text-label text-accent-cyan transition-colors duration-300" href="bergamoscienza.html">Bergamo Scienza</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
 </header>
+
 <main class="pt-32 pb-section-padding">
-<!-- Hero Section for Soft Skills -->
 <section class="max-w-container-max-width mx-auto px-gutter mb-20">
 <div class="border-l-2 border-primary pl-8">
 <h1 class="font-h1 text-h1 text-text-primary mb-6">Bergamo Scienza</h1>
 <p class="font-body-lg text-body-lg text-text-secondary max-w-2xl"></p><div class="flex flex-col sm:flex-row gap-12 mt-6">
-<div class="flex flex-col gap-1"><span class="font-label text-xl font-bold uppercase tracking-[0.2em] text-accent-cyan">DOVE?</span><span class="font-body-md text-sm text-text-secondary">Presso i laboratori della scuola </span></div>
+<div class="flex flex-col gap-1"><span class="font-label text-xl font-bold uppercase tracking-[0.2em] text-accent-cyan">DOVE?</span><span class="font-body-md text-sm text-text-secondary">Presso i laboratori della scuola </span></div>
 <div class="flex flex-col gap-1"><span class="font-label text-xl font-bold uppercase tracking-[0.2em] text-accent-cyan">QUANDO?</span><span class="font-body-md text-sm text-text-secondary">Dal 16 al 20 Giugno 2025</span></div>
 </div><p></p>
 </div>
 </section>
-<!-- Narrative Soft Skills Section -->
 <section class="max-w-container-max-width mx-auto px-gutter">
 <div class="max-w-4xl bg-surface-container-low rounded-xl p-10 md:p-16 border border-outline-variant/30">
 <div class="flex flex-col gap-8">
@@ -165,10 +170,8 @@
 </div>
 </div>
 </section>
-<!-- Visual Anchor Section -->
 <section class="max-w-container-max-width mx-auto px-gutter mt-section-padding">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
-<!-- Image 1 -->
 <div class="space-y-4">
 <div class="relative h-[300px] w-full rounded-xl overflow-hidden grayscale contrast-125 opacity-90 transition-all duration-700 hover:grayscale-0">
 <img alt="Scientific data visualization" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAg44a4FJdgJLonKip9GybvQEPGwjnGKYr0ObXXw7IXM5jIkwOBqYRXSvS5uZ5BSMlc5WD10of5rL5yNfMOAuQRPgtbVxCX0-FjMMUXafgeppcEuSGt9rxp32aTMeokt_rUp5glEOJI6sujEurSfAryki7XpnI05guXHlRrgF6lYK3c3eWsvB47El2BSZD2gU2VSCpsq_61XkvhxES-RcC8cSk3AEcaPMGKvQ_NSv22LZxF5O6Rgt9E5GEzKu7aIO8f4EvRD0X9JE0"/>
@@ -176,10 +179,9 @@
 </div>
 <div class="flex items-center gap-2 px-2">
 <span class="w-4 h-[1px] bg-primary"></span>
-<span class="font-label text-[0.75rem] uppercase tracking-widest text-text-secondary">Data Analysis &amp; Visualization</span>
+<span class="font-label text-[0.75rem] uppercase tracking-widest text-text-secondary">Data Analysis & Visualization</span>
 </div>
 </div>
-<!-- Image 2 -->
 <div class="space-y-4">
 <div class="relative h-[300px] w-full rounded-xl overflow-hidden grayscale contrast-125 opacity-90 transition-all duration-700 hover:grayscale-0">
 <img alt="Professional laboratory setting" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA54p2CllN781YUEQ8freBhvSNuIv1X0dqfmPduwkFto6X0_FuW7O-Kfp0CmO5_IzmwrkdHwPeCI1diw6TCK-Kljpnzq32f7LcG_EUvd0JR5BgIA3Kvjm-Nbk7Ou4bFl7mZF3_oAoJB2EZjRbQOC6kWsAwASrtjUuA8tg8tHMZnRIJ3l_xvXrrVoOJhceH61vClyx6aaVCciorIROiGtIKgAlycHtW1VzuPmY-CjcceawnLQtT-hVCMx9uwLp7QCgvMZCdnc0iVR-U"/>
@@ -193,7 +195,6 @@
 </div>
 </section>
 </main>
-<!-- Footer -->
 <footer class="w-full py-section-padding bg-surface-container-low dark:bg-inverse-surface border-t border-outline-variant">
 <div class="flex flex-col md:flex-row justify-between items-center max-w-container-max-width mx-auto px-gutter gap-component-gap">
 <div class="flex flex-col gap-2">
@@ -204,4 +205,5 @@
 </div>
 </div>
 </footer>
-</body></html>
+</body>
+</html>
