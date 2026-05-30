@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-
-<html class="light" lang="en" style=""><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="light" lang="it">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
       tailwind.config = {
         darkMode: "class",
         theme: {
@@ -70,10 +70,7 @@
                     "full": "9999px"
             },
             "spacing": {
-                    "section-padding": "5rem",
-                    "component-gap": "3rem",
-                    "gutter": "2rem",
-                    "container-max-width": "1024px"
+                    "gutter": "2rem"
             },
             "fontFamily": {
                     "label": ["Inter"],
@@ -93,101 +90,123 @@
         },
       }
     </script>
-<style>
+    <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 48;
             font-size: 2.5rem;
         }
         body {
             background-color: #F8FAFC;
+            min-height: 100dvh;
         }
     </style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
 </head>
-<body class="font-body-md text-on-surface">
+<body class="font-body-md text-on-surface antialiased">
+
 <header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md border-b border-outline-variant/10">
-<div class="flex justify-between items-center max-w-container-max-width mx-auto px-gutter py-4">
-<div class="flex items-center gap-4">
-<span class="font-h2 text-h2 font-semibold text-on-surface dark:text-inverse-on-surface tracking-widest uppercase">DELL'ACQUA</span>
-</div>
-<nav class="hidden md:flex items-center gap-8"><div class="flex items-center gap-6"><a class="font-label text-label text-on-surface-variant hover:text-accent-cyan transition-colors duration-300" href="index.html">HOME</a><div class="flex items-center gap-4"><a class="font-label text-label text-on-surface-variant hover:text-accent-cyan transition-colors duration-300" href="esperienze.html">ESPERIENZE</a><div class="flex items-center gap-2"><span class="w-4 h-[1px] bg-outline-variant"></span><a class="font-label text-label text-accent-cyan transition-colors duration-300" href="osservatorioastronomico.html">Osservatorio Astronomico (CRE)</a></div></div></div></nav>
-</div>
+    <div class="flex justify-between items-center max-w-4xl mx-auto px-gutter py-4">
+        <div class="flex items-center gap-4">
+            <span class="font-h2 text-h2 font-semibold text-on-surface dark:text-inverse-on-surface tracking-widest uppercase">DELL'ACQUA</span>
+        </div>
+        <nav class="hidden md:flex items-center gap-8">
+            <div class="flex items-center gap-6">
+                <a class="font-label text-label text-on-surface-variant hover:text-accent-cyan transition-colors duration-300" href="index.html">HOME</a>
+                <div class="flex items-center gap-4">
+                    <a class="font-label text-label text-on-surface-variant hover:text-accent-cyan transition-colors duration-300" href="esperienze.html">ESPERIENZE</a>
+                    <div class="flex items-center gap-2">
+                        <span class="w-4 h-[1px] bg-outline-variant"></span>
+                        <a class="font-label text-label text-accent-cyan transition-colors duration-300" href="osservatorioastronomico.html">Osservatorio Astronomico (CRE)</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
 </header>
 
-<main class="pt-32 pb-section-padding">
-<section class="max-w-container-max-width mx-auto px-gutter mb-20">
-<div class="max-w-4xl mx-auto border-l-2 border-primary pl-8">
-<h1 class="font-h1 text-h1 text-text-primary mb-6">Osservatorio Astronomico (CRE)</h1>
-<div class="flex flex-col sm:flex-row gap-12 mt-6">
-<div class="flex flex-col gap-1"><span class="font-label text-xl font-bold uppercase tracking-[0.2em] text-accent-cyan">DOVE?</span><span class="font-body-md text-sm text-text-secondary">Presso l'osservatorio astronomico "La Torre del Sole di Brembate Sopra" (BG)</span></div>
-<div class="flex flex-col gap-1"><span class="font-label text-xl font-bold uppercase tracking-[0.2em] text-accent-cyan">QUANDO?</span><span class="font-body-md text-sm text-text-secondary">Dal 2 al 6 Settembre 2024</span></div>
-</div>
-</div>
-</section>
+<main class="pt-32 pb-20 px-gutter">
+    <section class="max-w-4xl mx-auto mb-20">
+        <div class="border-l-2 border-primary pl-8">
+            <h1 class="font-h1 text-h1 text-text-primary mb-6">Osservatorio Astronomico (CRE)</h1>
+            <div class="flex flex-col sm:flex-row gap-12 mt-6">
+                <div class="flex flex-col gap-1"><span class="font-label text-xl font-bold uppercase tracking-[0.2em] text-accent-cyan">DOVE?</span><span class="font-body-md text-sm text-text-secondary">Presso l'osservatorio astronomico "La Torre del Sole di Brembate Sopra" (BG)</span></div>
+                <div class="flex flex-col gap-1"><span class="font-label text-xl font-bold uppercase tracking-[0.2em] text-accent-cyan">QUANDO?</span><span class="font-body-md text-sm text-text-secondary">Dal 2 al 6 Settembre 2024</span></div>
+            </div>
+        </div>
+    </section>
 
-<section class="max-w-container-max-width mx-auto px-gutter">
-<div class="max-w-4xl mx-auto bg-surface-container-low rounded-xl p-10 md:p-16 border border-outline-variant/30">
-<div class="flex flex-col gap-8">
-<header class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary" data-icon="auto_awesome">edit</span>
-<h2 class="font-label text-label uppercase tracking-[0.2em] text-primary">descrizione dell'attività</h2>
-</header>
-<article class="space-y-8">
-<p class="font-body-lg text-on-surface-variant leading-relaxed">L'esperienza all'interno dell'osservatorio consisteva nel gestire un gruppo di bambini iscritti al CRE estivo promosso dalla struttura. Nel corso dell'attività ho pertanto partecipato solamente a ciò che veniva proposto ai ragazzi, il cui livello di conoscenze scientifiche non era particolarmente elevato. Per questo motivo non ho appreso particolari conoscenze scientifiche. </p>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-<div class="space-y-4">
-<div class="flex items-center gap-3 text-accent-cyan">
-<span class="material-symbols-outlined !text-xl" data-icon="record_voice_over">record_voice_over</span>
-<span class="font-label text-[0.75rem] uppercase tracking-widest">collaborazione</span>
-</div>
-<p class="font-body-md text-on-surface-variant">Ho avuto modo di migliorare le mie abilità comunicative e di collaborazione in gruppo.</p><div class="text-sm text-on-surface-variant leading-relaxed">Mi son saputo approcciare coi bambini e ho cercato di riempire il momenti vuoti, in cui i ragazzi risultavano più scalmanati, con activities ludiche o divertenti, talvolta anche grazie all'utilizzo del cellulare</div>
-</div>
-<div class="space-y-4">
-<div class="flex items-center gap-3 text-accent-cyan">
-<span class="material-symbols-outlined !text-xl" data-icon="psychology">psychology</span>
-<span class="font-label text-[0.75rem] uppercase tracking-widest">utilità orientativa</span>
-</div>
-<p class="font-body-md text-on-surface-variant">L'attività non mi è stata molto utile in ambito orientativo. Speravo di poter approfondire temi riguardanti l'astronomia, cosa che è stata ottenuta in modo marginale. </p><div class="text-sm text-on-surface-variant leading-relaxed">Sono rimasto particolarmente deluso anche a fronte dei ricordi molto positivi che avevo della struttura.</div>
-</div>
-</div>
-<div class="pt-8 border-t border-outline-variant/20">
-<p class="font-body-md text-text-secondary italic">Un'esperienza che purtroppo ha tradito le aspettative: speravo di poter entrare in contatto con conoscenze scientifiche che mi meravigliassero, emozione prevalente nei ricordi che avevo della struttura</p>
-</div>
-</article>
-</div>
-</div>
-</section>
+    <section class="max-w-4xl mx-auto mb-12">
+        <div class="bg-surface-container-low rounded-xl p-10 md:p-16 border border-outline-variant/30">
+            <div class="flex flex-col gap-8">
+                <header class="flex items-center gap-4">
+                    <span class="material-symbols-outlined text-primary" data-icon="auto_awesome">edit</span>
+                    <h2 class="font-label text-label uppercase tracking-[0.2em] text-primary">descrizione dell'attività</h2>
+                </header>
+                <article class="space-y-8">
+                    <p class="font-body-lg text-on-surface-variant leading-relaxed">L'esperienza all'interno dell'osservatorio consisteva nel gestire un group di bambini iscritti al CRE estivo promosso dalla struttura. Nel corso dell'attività ho pertanto partecipato solamente a ciò che veniva proposto ai ragazzi, il cui livello di conoscenze scientifiche non era particolarmente elevato. Per questo motivo non ho appreso particolari conoscenze scientifiche. </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3 text-accent-cyan">
+                                <span class="material-symbols-outlined !text-xl" data-icon="record_voice_over">record_voice_over</span>
+                                <span class="font-label text-[0.75rem] uppercase tracking-widest">collaborazione</span>
+                            </div>
+                            <p class="font-body-md text-on-surface-variant leading-relaxed">
+                                Ho avuto modo di migliorare le mie abilità comunicative e di collaborazione in gruppo. Mi son saputo approcciare coi bambini e ho cercato di riempire il momenti vuoti, in cui i ragazzi risultavano più scalmanati, con attività ludiche o divertenti, talvolta anche grazie all'utilizzo del cellulare.
+                            </p>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3 text-accent-cyan">
+                                <span class="material-symbols-outlined !text-xl" data-icon="psychology">psychology</span>
+                                <span class="font-label text-[0.75rem] uppercase tracking-widest">utilità orientativa</span>
+                            </div>
+                            <p class="font-body-md text-on-surface-variant leading-relaxed">
+                                L'attività non mi è stata molto utile in ambito orientativo. Speravo di poter approfondire temi riguardanti l'astronomia, cosa che è stata ottenuta in modo marginale. Sono rimasto particolarmente deluso anche a fronte dei ricordi molto positivi che avevo della struttura.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="pt-8 border-t border-outline-variant/20">
+                        <p class="font-body-md text-text-secondary italic">Un'esperienza che purtroppo ha tradito le aspettative: speravo di poter entrare in contatto con conoscenze scientifiche che mi meravigliassero, emozione prevalente nei ricordi che avevo della struttura</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
 
-<section class="max-w-container-max-width mx-auto px-gutter mt-12">
-<div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-<div class="relative aspect-video w-full rounded-xl overflow-hidden grayscale contrast-125 opacity-90 transition-all duration-700 hover:grayscale-0 group shadow-sm border border-outline-variant/10">
-<img alt="Data Analysis Interface" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChNIU31OlFA7fMrSFKQHY6DcThZrwTRC089ephsH0eLBEzYKDqDJgYpvv0ZReh2T9pJtG1htktow7fQUnVXkxXyDPz4agJ_VhGLssQM42S0EwtlmEWdckx1mO9LDa3RgGhkiP8DGq91q4llkUfB_e1uFDbPlePCFyeWWxxlyqZdPpDzWpaY-jmpK0ubkSwpUdkCi7RkLht1ARXILDq1Pwn6yllzJ0g1fXm01VgM2DsCBhtMP7wOmO8zKSFLicmVugtYL0V4_HTjhM"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
-<div class="absolute bottom-4 left-4">
-<span class="font-label text-[0.7rem] font-bold text-white bg-primary px-3 py-1.5 rounded-full uppercase tracking-widest">DATA ANALYSIS</span>
-</div>
-</div>
-<div class="relative aspect-video w-full rounded-xl overflow-hidden grayscale contrast-125 opacity-90 transition-all duration-700 hover:grayscale-0 group shadow-sm border border-outline-variant/10">
-<img alt="Precision Laboratory Environment" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_rrgRygll3bItMFFznzFTTYReWY1mRikaN_dmMTLG45vE-oQnry3FaIFTsAagWlDntPbFEC5AIW-7znetlVyxg4hxMywS0g_Bil0YLzK2G6_et5UsorKQlrIQ45oiCjZ2YzCAkCkm1HPMeK6YAJfFK1fFr-X-5bnSjKg3BfEofGFuglQsJjHC3KWO_KCcEHFLpJ5AftdaTJcpUv36XitPB4LSh0D5Ax6crh3fF8C2Nj8eblNlMzGzx83MdTYC9lLB4AUSQX7Hcpc"/>
-<div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
-<div class="absolute bottom-4 left-4">
-<span class="font-label text-[0.7rem] font-bold text-white bg-primary px-3 py-1.5 rounded-full uppercase tracking-widest">PRECISION LAB</span>
-</div>
-</div>
-</div>
-</section>
+    <section class="max-w-4xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="relative aspect-video w-full rounded-xl overflow-hidden bg-white border border-outline-variant/30 shadow-sm group cursor-pointer">
+                <img alt="Data Analysis Interface" class="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChNIU31OlFA7fMrSFKQHY6DcThZrwTRC089ephsH0eLBEzYKDqDJgYpvv0ZReh2T9pJtG1htktow7fQUnVXkxXyDPz4agJ_VhGLssQM42S0EwtlmEWdckx1mO9LDa3RgGhkiP8DGq91q4llkUfB_e1uFDbPlePCFyeWWxxlyqZdPpDzWpaY-jmpK0ubkSwpUdkCi7RkLht1ARXILDq1Pwn6yllzJ0g1fXm01VgM2DsCBhtMP7wOmO8zKSFLicmVugtYL0V4_HTjhM"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/20 via-transparent to-transparent pointer-events-none"></div>
+                <div class="absolute bottom-4 left-4">
+                    <span class="font-label text-[0.7rem] font-bold text-slate-200 bg-slate-500 px-3 py-1.5 rounded-full uppercase tracking-widest transition-all duration-500 group-hover:text-white group-hover:bg-primary [@media(hover:hover)]:group-hover:hover:bg-accent-cyan">
+                        DATA ANALYSIS
+                    </span>
+                </div>
+            </div>
+            
+            <div class="relative aspect-video w-full rounded-xl overflow-hidden bg-white border border-outline-variant/30 shadow-sm group cursor-pointer">
+                <img alt="Precision Laboratory Environment" class="w-full h-full object-cover grayscale transition-all duration-500 group-hover:grayscale-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_rrgRygll3bItMFFznzFTTYReWY1mRikaN_dmMTLG45vE-oQnry3FaIFTsAagWlDntPbFEC5AIW-7znetlVyxg4hxMywS0g_Bil0YLzK2G6_et5UsorKQlrIQ45oiCjZ2YzCAkCkm1HPMeK6YAJfFK1fFr-X-5bnSjKg3BfEofGFuglQsJjHC3KWO_KCcEHFLpJ5AftdaTJcpUv36XitPB4LSh0D5Ax6crh3fF8C2Nj8eblNlMzGzx83MdTYC9lLB4AUSQX7Hcpc"/>
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/20 via-transparent to-transparent pointer-events-none"></div>
+                <div class="absolute bottom-4 left-4">
+                    <span class="font-label text-[0.7rem] font-bold text-slate-200 bg-slate-500 px-3 py-1.5 rounded-full uppercase tracking-widest transition-all duration-500 group-hover:text-white group-hover:bg-primary [@media(hover:hover)]:group-hover:hover:bg-accent-cyan">
+                        PRECISION LAB
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 
-<footer class="w-full py-12 bg-surface-container-low dark:bg-inverse-surface border-t border-outline-variant mt-20">
-<div class="flex flex-col md:flex-row justify-between items-center max-w-container-max-width mx-auto px-gutter gap-6">
-<div class="flex flex-col gap-2">
-<span class="font-label text-label font-bold text-on-surface uppercase tracking-widest">DELL'ACQUA</span>
-<p class="font-body-md text-body-md text-text-secondary opacity-80">© 2026 Gabriele Dell'Acqua. Percorso PCTO.</p>
-</div>
-</div>
+<footer class="w-full py-12 bg-surface-container-low dark:bg-inverse-surface border-t border-outline-variant">
+    <div class="flex flex-col md:flex-row justify-between items-center max-w-4xl mx-auto px-gutter gap-6">
+        <div class="flex flex-col gap-2">
+            <span class="font-label text-label font-bold text-on-surface uppercase tracking-widest">DELL'ACQUA</span>
+            <p class="font-body-md text-body-md text-text-secondary opacity-80">© 2026 Gabriele Dell'Acqua. Percorso PCTO.</p>
+        </div>
+    </div>
 </footer>
-</body></html>
+
+</body>
+</html>
