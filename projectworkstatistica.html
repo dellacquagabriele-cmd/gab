@@ -1,0 +1,194 @@
+<!DOCTYPE html><html class="light" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Newsreader:opsz,wght@6..72,500;6..72,600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-surface": "#2c3135",
+                    "secondary-fixed-dim": "#bec6e0",
+                    "on-primary": "#ffffff",
+                    "surface-variant": "#dee3e9",
+                    "on-tertiary-container": "#4d2b00",
+                    "surface-bright": "#f6faff",
+                    "background": "#F8FAFC",
+                    "tertiary": "#8a5100",
+                    "on-background": "#171c20",
+                    "on-tertiary": "#ffffff",
+                    "primary": "#006591",
+                    "tertiary-container": "#de8712",
+                    "on-surface": "#171c20",
+                    "on-error-container": "#93000a",
+                    "surface-container-highest": "#dee3e9",
+                    "surface-dim": "#d6dae0",
+                    "secondary-fixed": "#dae2fd",
+                    "on-secondary": "#ffffff",
+                    "surface-container": "#eaeef4",
+                    "surface-container-high": "#e4e8ee",
+                    "on-tertiary-fixed": "#2c1600",
+                    "on-primary-fixed-variant": "#004c6e",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed": "#131b2e",
+                    "tertiary-fixed": "#ffdcbd",
+                    "on-secondary-fixed-variant": "#3f465c",
+                    "on-error": "#ffffff",
+                    "inverse-primary": "#89ceff",
+                    "tertiary-fixed-dim": "#ffb86e",
+                    "secondary": "#565e74",
+                    "surface-container-low": "#f0f4fa",
+                    "surface-tint": "#006591",
+                    "on-tertiary-fixed-variant": "#693c00",
+                    "outline": "#6e7881",
+                    "surface-container-lowest": "#ffffff",
+                    "error": "#ba1a1a",
+                    "on-primary-container": "#003751",
+                    "inverse-on-surface": "#edf1f7",
+                    "accent-cyan": "#0EA5E9",
+                    "on-primary-fixed": "#001e2f",
+                    "text-primary": "#0F172A",
+                    "secondary-container": "#dae2fd",
+                    "primary-container": "#0ea5e9",
+                    "surface": "#f6faff",
+                    "primary-fixed-dim": "#89ceff",
+                    "on-surface-variant": "#3e4850",
+                    "primary-fixed": "#c9e6ff",
+                    "outline-variant": "#bec8d2",
+                    "text-secondary": "#64748B",
+                    "on-secondary-container": "#5c647a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "section-padding": "5rem",
+                    "component-gap": "3rem",
+                    "gutter": "2rem",
+                    "container-max-width": "1280px"
+            },
+            "fontFamily": {
+                    "label": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "h1": ["Newsreader"],
+                    "h2": ["Newsreader"],
+                    "body-md": ["Inter"]
+            },
+            "fontSize": {
+                    "label": ["0.875rem", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-lg": ["1.125rem", {"lineHeight": "1.625", "letterSpacing": "0.01em", "fontWeight": "300"}],
+                    "h1": ["4rem", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                    "h2": ["2.5rem", {"lineHeight": "1.2", "fontWeight": "500"}],
+                    "body-md": ["1rem", {"lineHeight": "1.625", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 48;
+            font-size: 2.5rem;
+        }
+        body {
+            background-color: #F8FAFC;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="font-body-md text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md">
+<div class="flex justify-between items-center max-w-container-max-width mx-auto px-gutter py-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed-dim cursor-pointer transition-transform duration-300 hover:scale-105" data-icon="menu">menu</span>
+<span class="font-h2 text-h2 font-semibold text-on-surface dark:text-inverse-on-surface tracking-widest uppercase">DELL'ACQUA</span>
+</div>
+<nav class="hidden md:flex items-center gap-8"><div class="flex items-center gap-6"><a class="font-label text-label text-on-surface-variant hover:text-accent-cyan transition-colors duration-300" href="#">HOME</a><div class="flex items-center gap-4"><a class="font-label text-label text-on-surface-variant hover:text-accent-cyan transition-colors duration-300" href="#">ESPERIENZE</a><div class="flex items-center gap-2"><span class="w-4 h-[1px] bg-outline-variant"></span><a class="font-label text-label text-accent-cyan transition-colors duration-300" href="#">Campus Fisica Nucleare</a></div></div></div></nav>
+</div>
+</header>
+<main class="pt-32 pb-section-padding">
+<!-- Hero Section for Soft Skills -->
+<section class="max-w-container-max-width mx-auto px-gutter mb-20">
+<div class="border-l-2 border-primary pl-8">
+<h1 class="font-h1 text-h1 text-text-primary mb-6">Project work Statistica</h1>
+<p class="font-body-lg text-body-lg text-text-secondary max-w-2xl"></p><div class="flex flex-col sm:flex-row gap-12 mt-6">
+<div class="flex flex-col gap-1"><span class="font-label text-xl font-bold uppercase tracking-[0.2em] text-accent-cyan">DOVE?</span><span class="font-body-md text-sm text-text-secondary">Laboratorio di informatica del liceo</span></div>
+<div class="flex flex-col gap-1"><span class="font-label text-xl font-bold uppercase tracking-[0.2em] text-accent-cyan">QUANDO?</span><span class="font-body-md text-sm text-text-secondary">Dall'8 Aprile al 29 Aprile 2024</span></div>
+</div><p></p>
+</div>
+</section>
+<!-- Narrative Soft Skills Section -->
+<section class="max-w-container-max-width mx-auto px-gutter">
+<div class="max-w-4xl bg-surface-container-low rounded-xl p-10 md:p-16 border border-outline-variant/30">
+<div class="flex flex-col gap-8">
+<header class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="auto_awesome">edit</span>
+<h2 class="font-label text-label uppercase tracking-[0.2em] text-primary">descrizione dell'attività</h2>
+</header>
+<article class="space-y-8">
+<p class="font-body-lg text-on-surface-variant leading-relaxed"><span id="docs-internal-guid-6a70c385-7fff-8b8b-e056-3434bc0374f1" class=""><span style="font-size: 12pt; font-family: Arial, sans-serif; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;" class="">InfoSOStenibile è una testata giornalistica che tratta temi di attualità come il cambiamento climatico o il riciclo di rifiuti. L’esperienza riguardava la stesura di un articolo di giornale basato su dati statistici raccolti all’interno della mia scuola, in cui abbiamo spiegato le ragioni per le quali i ragazzi del liceo scelgano libri usati o libri nuovi per studiare.</span></span></p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="space-y-4">
+<div class="flex items-center gap-3 text-accent-cyan">
+<span class="material-symbols-outlined !text-xl" data-icon="record_voice_over">record_voice_over</span>
+<span class="font-label text-[0.75rem] uppercase tracking-widest">COMUNICAZIONE</span>
+</div>
+<p class="font-body-md text-on-surface-variant"><span id="docs-internal-guid-03fad9b8-7fff-1168-7c60-64ca4ce4534c" class=""></span></p><p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;" class=""><span style="font-size: 12pt; font-family: Arial, sans-serif; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;" class="">La collaborazione in gruppo è stata un’importante capacità tratta dall’attività. Descrivere la propria idea e ascoltare quelle altrui sono stati elementi importanti per ottenere l’articolo migliore possibile</span></p><div><span style="font-size: 12pt; font-family: Arial, sans-serif; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;"><br></span></div><p></p>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-3 text-accent-cyan">
+<span class="material-symbols-outlined !text-xl" data-icon="psychology">psychology</span>
+<span class="font-label text-[0.75rem] uppercase tracking-widest">compretenze grafiche</span>
+</div>
+<p class="font-body-md text-on-surface-variant"><span id="docs-internal-guid-fcf7838d-7fff-3a02-1ad4-e1380d6d7523" class=""></span></p><p dir="ltr" style="line-height:1.38;margin-top:0pt;margin-bottom:0pt;" class=""><span style="font-size: 12pt; font-family: Arial, sans-serif; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;" class="">Ho sviluppato capacità di analisi dei dati e di rappresentazione grafica di questi ultimi. Sono stato in grado di rendere dei dati numerici accattivanti e di inserirli in un articolo.</span></p><div><span style="font-size: 12pt; font-family: Arial, sans-serif; font-variant: normal; vertical-align: baseline; white-space: pre-wrap;"><br></span></div><p></p>
+</div>
+</div>
+<div class="pt-8 border-t border-outline-variant/20">
+<p class="font-body-md text-text-secondary italic">
+                        Attività in cui la collaborazione tra membri del gruppo e tra gruppi diversi ci ha permesso di realizzare il migliore articolo possibile per InfoSOStenibile</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Visual Anchor Section -->
+<section class="max-w-container-max-width mx-auto px-gutter mt-section-padding">
+<div class="relative h-[400px] w-full rounded-xl overflow-hidden grayscale contrast-125 opacity-90 transition-all duration-700 hover:grayscale-0">
+<img alt="Professional collaborative environment" class="w-full h-full object-cover" data-alt="A sophisticated, high-end collaborative workspace with a group of diverse professionals engaged in a deep scientific discussion. The environment is minimalist and editorial, featuring floor-to-ceiling windows with soft, overcast natural lighting. The color palette is composed of cool blues, crisp whites, and deep charcoals, reflecting a modern corporate and scientific journal aesthetic. The scene captures a sense of quiet focus, technical competence, and high-level intellectual discovery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcGlodFuDOsiAK0H3zXrksjjvQr8BsKbnidbSBOXG139PHSE2PdoZZQgSzWorl-XgzKwOK9HfSRNqaxsAKT-zkKnOh8FbYyiw-ByHiYwrNtzlhomYPngeAE812NsdtO0jylOt6FWahkww1naElc0sOZRX5ez9HNxYtyu9WX-ErN7SL05nDixUhtfImpiaQzIso2oegWpJLefra5_EQD364swLz9aF4fX_ReBIo5CEwPA0nv8e2A_8mrs_HzQsQoDQ-vRciDH5DjnU">
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+<div class="absolute bottom-8 left-8">
+<span class="font-label text-label text-white bg-primary px-4 py-2 rounded-full uppercase tracking-widest">Collaborative Infrastructure</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-padding bg-surface-container-low dark:bg-inverse-surface border-t border-outline-variant">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-container-max-width mx-auto px-gutter gap-component-gap">
+<div class="flex flex-col gap-2">
+<span class="font-label text-label font-bold text-on-surface uppercase tracking-widest">DELL'ACQUA</span>
+<p class="font-body-md text-body-md text-text-secondary opacity-80">© 2026 Gabriele Dell'Acqua. Percorso PCTO.</p>
+</div>
+<div class="flex items-center gap-8">
+</div>
+</div>
+</footer>
+
+
+
+
+
+
+</body></html>
